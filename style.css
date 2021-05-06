@@ -1,10 +1,11 @@
 /* CSS files add styling rules to your content */
 
 body {
-    font-family: helvetica, arial, sans-serif;
+    font-family: "Gambetta Light";
     margin: 2em;
     background-color: #255F63;
     overflow: scroll;
+    color: #FBC9BE;
   }
   
   h1 {
@@ -12,7 +13,7 @@ body {
     margin: 2rem;
     font-size: 4rem;
     text-align: center;
-    font-family: 'Qaligo';
+    font-family: "Qaligo";
   }
   
   p1 {
@@ -21,7 +22,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Gambetta Light';
+    font-family: "Gambetta Light";
   }
   
   p2 {
@@ -34,18 +35,20 @@ body {
     max-width: 300px;
     height: 300px;
     object-fit: contain;
-    float: center;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
   
-  input[type=text] {
+  input[type="text"] {
     width: 210px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     transition: width 0.4s ease-in-out;
@@ -72,7 +75,7 @@ body {
   .navbar {
     overflow: hidden;
     background-color: #FBC9BE;
-    font-family: 'Gambetta Light';
+    font-family: "Gambetta Regular";
   }
   
   .navbar a {
@@ -87,23 +90,25 @@ body {
   .dropdown {
     float: left;
     overflow: hidden;
-      margin: auto;
+    margin: auto;
     width: 50%;
   }
   
   .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
-    color: #255F63;;
+    color: #255F63;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
   }
   
-  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  .navbar a:hover,
+  .dropdown:hover .dropbtn,
+  .dropbtn:focus {
     background-color: #598F93;
   }
   
@@ -112,7 +117,7 @@ body {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   
@@ -135,9 +140,14 @@ body {
   
   #input {
     margin: 0 auto;
-  margin-left: auto;
-  margin-right: auto;
-    font-family: 'Gambetta Light';
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Gambetta Light";
+  }
+  
+  @font-face {
+    font-family: "Gambetta";
+    src: url("./assets/GambettaRegular.otf") format("opentype");
   }
   
   @font-face {
