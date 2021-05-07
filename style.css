@@ -1,5 +1,3 @@
-/* CSS files add styling rules to your content */
-
 body {
     font-family: "Gambetta Light";
     margin: 2em;
@@ -61,15 +59,6 @@ body {
       margin: 2em;
       background: #2d1e5d;
     }
-    p3 {
-      color: #fadea9;
-    }
-    h3 {
-      color: #fadea9;
-    }
-    h2 {
-      color: #fadea9;
-    }
   }
   
   .navbar {
@@ -81,7 +70,7 @@ body {
   .navbar a {
     float: left;
     font-size: 16px;
-    color: #255F63;
+    background-color: #FBC9BE;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -92,6 +81,7 @@ body {
     overflow: hidden;
     margin: auto;
     width: 50%;
+    color: #255F63;
   }
   
   .dropdown .dropbtn {
@@ -123,7 +113,7 @@ body {
   
   .dropdown-content a {
     float: none;
-    color: black;
+    color: #255F63;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -136,6 +126,7 @@ body {
   
   .show {
     display: block;
+    
   }
   
   #input {
@@ -144,6 +135,22 @@ body {
     margin-right: auto;
     font-family: "Gambetta Light";
   }
+  
+  input[type=text] {
+    width: 18%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border: 8px solid #FBC9BE;
+  }
+  
   
   @font-face {
     font-family: "Gambetta";
